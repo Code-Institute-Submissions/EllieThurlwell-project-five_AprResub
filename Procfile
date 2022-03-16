@@ -1,1 +1,1 @@
-web: gunicorn coffeeshop-pp5.wsgi
+web: gunicorn coffeeshop.wsgi
