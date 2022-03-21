@@ -34,15 +34,15 @@
 
 <body>
 
+    <!-- site wide header -->
     <header>
         <div class="row">
             <div class="col-12 col-lg-4 my-auto text-center text-lg-left">
                 <span>
                     <a href="{% url 'home' %}" class="nav-link">
-                        <h2 class="logo">CoffeeShop</h2>
+                        <h2 class="logo brown">CoffeeShop</h2>
                     </a>
                 </span>
-                
             </div>
             <div class="col-12 col-lg-4 my-auto">
                 <form method="GET" action="">
@@ -51,7 +51,7 @@
                         <div class="input-group-append" id="search-icon">
                             <button class="form-control btn btn-black border border-black" type="submit">
                                 <span class="icon">
-                                    <i class="fas fa-search"></i>
+                                    <i class="fas fa-search brown"></i>
                                 </span>
                             </button>
                         </div>
@@ -63,34 +63,34 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <p class="my-0">Account</p>
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0 brown">Account</p>
+                                <div><i class="fas fa-user fa-lg brown"></i></div>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Admin Controls</a>
+                                    <a href="" class="dropdown-item brown">Admin Controls</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="" class="dropdown-item brown">Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item brown">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item brown">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item brown">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
-                                <p class="my-0">
+                                <p class="my-0 brown">
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
                                         €0.00
                                     {% endif %}
                                 </p>
-                                <div><i class="fas fa-cart-shopping fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-cart fa-lg brown"></i></div>
                             </div>
                         </a>
                     </li>
@@ -112,6 +112,18 @@
         <!-- page specific content -->
         {% endblock %}
     </main>
+
+    <!-- site wide footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="brown">Follow Us!</h4>
+                    <a class="btn brown" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn brown" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                    <a class="btn brown" href="http://instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
     {% endblock %}    
