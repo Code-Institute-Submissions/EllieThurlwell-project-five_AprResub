@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url(/media/header.jpg) top / cover no-repeat scroll;
+}
+
+#search-icon {
+    background-color: white;
+}
+
+#title {
+    padding-top: 5vh;
+}

@@ -1,6 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
+{% block pageheader %}
+
+{% endblock %}
+
 {% block content %}
-    <h1 class="text-success">Hello world!</h1>
+    <div class="container" id="title">
+        <div class="row">
+            <div class="col-12 my-auto text-center">
+                <h1>CoffeeShop</h1>
+                <h3>Your one stop shop for all things coffee</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5>Check out our great coffee subscription options!</h5>
+                <a href="" class="btn btn-lg">subscriptions</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}
