@@ -100,7 +100,7 @@
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        €0.00
+                                        £0.00
                                     {% endif %}
                                 </p>
                                 <div><i class="fas fa-shopping-cart fa-lg brown"></i></div>
@@ -110,40 +110,44 @@
 
                 </ul>
             </div>
-            
         </div>
+
         <div class="row">
             <nav class="navbar navbar-expand-lg w-100">
+                <!-- mobile collapse navbar -->
                 <button class="navbar-toggler brown" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon brown"></span>
                 </button>
-                <!-- include mobile header(?) and navbar with matching id of navbar -->
+                <!-- site wide navbar -->
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav w-auto mx-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link brown" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Coffee
                             </a>
                             <div class="dropdown-menu" aria-labelledby="coffee-link">
-                                <a href="" class="dropdown-item">Beans</a>
-                                <a href="" class="dropdown-item">Ground</a>
-                                <a href="" class="dropdown-item">Capsules</a>
-                                <a href="" class="dropdown-item">Decaf</a>
+                                <a href="" class="dropdown-item brown">Beans</a>
+                                <a href="" class="dropdown-item brown">Ground</a>
+                                <a href="" class="dropdown-item brown">Capsules</a>
+                                <a href="" class="dropdown-item brown">Decaf</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Subscription</a>
+                            <a href="" class="nav-link brown">Subscription</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link brown" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Equipment
                             </a>
                             <div class="dropdown-menu" aria-labelledby="coffee-link">
-                                <a href="" class="dropdown-item">Drip coffee</a>
-                                <a href="" class="dropdown-item">Coffee makers</a>
-                                <a href="" class="dropdown-item">Filter papers</a>
-                                <a href="" class="dropdown-item">Mugs</a>
+                                <a href="" class="dropdown-item brown">Drip coffee</a>
+                                <a href="" class="dropdown-item brown">Coffee makers</a>
+                                <a href="" class="dropdown-item brown">Filter papers</a>
+                                <a href="" class="dropdown-item brown">Mugs</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link brown">Locations</a>
                         </li>
                     </ul>
                 </div>
