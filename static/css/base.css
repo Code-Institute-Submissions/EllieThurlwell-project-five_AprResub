@@ -20,7 +20,7 @@ body {
 }
 
 /* index styling */
-#search-icon {
+.search-icon {
     background-color: white;
 }
 
@@ -31,7 +31,7 @@ body {
 
 body > footer {
     width: 100%;
-    background-color: #2B78E4;
+    /* background-color: white; */
     position: sticky;
     top: 100vh;
 }
