@@ -10,3 +10,12 @@ Photo by <a href="https://unsplash.com/@izgubljenausvemiru?utm_source=unsplash&u
 
 
 <a href="https://www.flaticon.com/free-icons/coffee-beans" title="coffee beans icons">Coffee beans icons created by Freepik - Flaticon</a>
+
+
+https://hiddencoffeeroasters.com/en/
+
+https://syra.coffee/
+
+https://www.redemptionroasters.com/
+
+https://lythamcoffee.com/
