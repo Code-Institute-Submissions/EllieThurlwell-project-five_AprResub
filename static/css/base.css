@@ -1,11 +1,21 @@
 /* site wide styling */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Varela+Round&display=swap');
+
 html, body {
     height: 100%;
 }
 
 body {
     background: url(/media/header.jpg) top / cover no-repeat scroll;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+
 
 .orange {
     color: #FF6400;
