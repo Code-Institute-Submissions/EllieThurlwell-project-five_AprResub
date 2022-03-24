@@ -17,10 +17,12 @@
         <div class="row">
             <div class="col">
                 {% if basket_items %}
-                    <div></div>
+                    <div>
+                        {{ basket_items }}
+                    </div>
                 {% else %}
                     <p>Your basket is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-lg"><i class="far fa-arrow-circle-left brown"></i>Check out our products!</a>
+                    <a href="{% url 'products' %}" class="btn btn-lg"><i class="fas fa-arrow-circle-left brown"></i>Check out our products!</a>
                 {% endif %}
             </div>
         </div>
