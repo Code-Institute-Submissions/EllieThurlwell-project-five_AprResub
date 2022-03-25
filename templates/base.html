@@ -58,9 +58,9 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-0 w-100" aria-labelledby="dropdown-search">
-                            <form class="form" method="GET" action="">
+                            <form class="form" method="GET" action="{% url 'products' %}">
                                 <div class="input-group w-100">
-                                    <input class="form-control border border-black" type="text" name="s" placeholder="Find your coffee">
+                                    <input class="form-control border border-black" type="text" name="q" placeholder="Find your coffee">
                                     <div class="input-group-append search-icon">
                                         <button class="form-control btn btn-black border border-black" type="submit">
                                             <span class="icon">
