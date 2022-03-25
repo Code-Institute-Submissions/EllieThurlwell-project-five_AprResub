@@ -128,26 +128,26 @@
                                 Coffee
                             </a>
                             <div class="dropdown-menu" aria-labelledby="coffee-link">
-                                <a href="{% url 'products' %}" class="dropdown-item brown">All</a>
-                                <a href="" class="dropdown-item brown">Beans</a>
-                                <a href="" class="dropdown-item brown">Ground Coffee</a>
-                                <a href="" class="dropdown-item brown">Machine Capsules</a>
-                                <a href="" class="dropdown-item brown">Decaf</a>
+                                <a href="{% url 'products' %}?category=beans,ground,capsules,decaf" class="dropdown-item brown">All</a>
+                                <a href="{% url 'products' %}?category=beans" class="dropdown-item brown">Beans</a>
+                                <a href="{% url 'products' %}?category=ground" class="dropdown-item brown">Ground Coffee</a>
+                                <a href="{% url 'products' %}?category=capsules" class="dropdown-item brown">Machine Capsules</a>
+                                <a href="{% url 'products' %}?category=decaf" class="dropdown-item brown">Decaf</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link brown">Subscription</a>
+                            <a href="{% url 'products' %}?category=subscription" class="nav-link brown">Subscription</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link brown" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Equipment
                             </a>
                             <div class="dropdown-menu" aria-labelledby="coffee-link">
-                                <a href="" class="dropdown-item brown">All</a>
-                                <a href="" class="dropdown-item brown">Drip coffee</a>
-                                <a href="" class="dropdown-item brown">Coffee makers</a>
-                                <a href="" class="dropdown-item brown">Filter papers</a>
-                                <a href="" class="dropdown-item brown">Mugs</a>
+                                <a href="{% url 'products' %}?category=drip_coffee,coffee_makers,filters,mugs" class="dropdown-item brown">All</a>
+                                <a href="{% url 'products' %}?category=drip_coffee" class="dropdown-item brown">Drip coffee</a>
+                                <a href="{% url 'products' %}?category=coffee_makers" class="dropdown-item brown">Coffee makers</a>
+                                <a href="{% url 'products' %}?category=filters" class="dropdown-item brown">Filter papers</a>
+                                <a href="{% url 'products' %}?category=mugs" class="dropdown-item brown">Mugs</a>
                             </div>
                         </li>
                         <li class="nav-item">
