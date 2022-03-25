@@ -11,14 +11,21 @@
         <div class="row">
             <div class="col text-center">
                 <h3>Products</h3>
+                {% for cat in current_categories %}
+                    <a href="{% url 'products' %}?category={{ cat.name }}">
+                        <span class="p-2 mt-2 badge">{{ cat.friendly_name }}</span>
+                    </a>
+                {% endfor %}
                 <hr class="mb-1">
             </div>
-            <!-- will also include any current filtering -->
         </div>
         <div class="row">
             <div class="product-container col-12">
-                <div class="row">
+                <div class="row mb-2">
                     <!-- number of products in result -->
+                    <div class="col">
+                        <p class="text-muted">{{ products|length }} products found for <em>{{ search_term }}</em></p>
+                    </div>
                 </div>
                 <div class="row">
                     {% for product in products %}
@@ -42,6 +49,9 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left">£{{ product.price }}</p>
+                                            <!-- <p class="small mt-1">
+                                                <a href="{% url 'products' %}?category={{ product.category.friendly_name }}">{{ product.category.friendly_name }}</a>
+                                            </p> -->
                                             {% if product.rating %}
                                                 <small class="text-muted">{{ product.rating }}/5</small>
                                             {% else %}
