@@ -45,3 +45,18 @@ body > footer {
     position: sticky;
     top: 100vh;
 }
+
+/* products page styling */
+.btt-btn {
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    border: solid 1px;
+    border-color: #4A1E00;
+}
+
+.btt-link {
+    cursor: pointer;
+}
