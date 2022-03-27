@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load basket_tools %}
 
 
 {% block pageheader %}
@@ -59,7 +60,7 @@
                                         <a class="remove-item float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="p-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
+                                        <p class="my-0">£{{ item.product.price | calc_itemtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
