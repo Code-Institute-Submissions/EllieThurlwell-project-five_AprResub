@@ -57,6 +57,6 @@ body > footer {
     border-color: #4A1E00;
 }
 
-.btt-link {
+.btt-link, .update-link, .remove-item {
     cursor: pointer;
 }
