@@ -35,11 +35,12 @@
                                     {% if product.image %}
                                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     {% else %}
-                                        <p>
+                                        <!-- <p>
                                             <i class="fas fa-exclamation brown px-5"></i>
                                             <br>
                                             <small>no product image available</small>
-                                        </p>
+                                        </p> -->
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholdersm.jpg" alt="{{ product.name }}">
                                     {% endif %}
                                     <div class="card-body pb-0">
                                         <p>{{ product.name }}</p>
