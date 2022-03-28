@@ -11,7 +11,7 @@ class OrderLineItemAdminInline(admin.TabularInline):
 class OrderAdmin(admin.ModelAdmin):
     """ allow access to order info in admin """
 
-    inlines = (OrderLineItemAdminInline)
+    inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = (
         'order_number',
