@@ -16,11 +16,6 @@
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                     {% else %}
-                        <!-- <p>
-                            <i class="fas fa-exclamation brown px-5"></i>
-                            <br>
-                            <small>no product image available</small>
-                         </p> -->
                          <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholdersm.jpg" alt="{{ product.name }}">
                     {% endif %}
                 </div>
