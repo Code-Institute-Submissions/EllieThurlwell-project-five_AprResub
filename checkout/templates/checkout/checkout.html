@@ -100,6 +100,8 @@
                         <div class="mb-3" id="card-element"></div>
                         <!-- stripe error display -->
                         <div class="mb-3" id="card-errors" role="alert"></div>
+                        <!-- pass client secret to the view to get payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
                     <div class="submit-btn text-right mt-5 mb-2">
                         <a class="btn" href="{% url 'view_basket' %}">
