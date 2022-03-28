@@ -6,7 +6,8 @@ html, body {
 }
 
 body {
-    background: url(/media/header.jpg) top / cover no-repeat scroll;
+    /* background: url(/media/header.jpg) top / cover no-repeat scroll; */
+    background-color: #f8eded;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 }
