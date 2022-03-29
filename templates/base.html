@@ -199,11 +199,25 @@
     <!-- site wide footer -->
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 col-sm-4 text-center">
                 <h6 class="brown">Follow Us!</h6>
-                    <a class="btn brown" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn brown" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                    <a class="btn brown" href="http://instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                <a class="btn brown" href="http://facebook.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Facebook (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn brown" href="http://twitter.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+                <a class="btn brown" href="http://instagram.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Instagram (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="col-12 col-sm-4 text-center">
+                <h6 class="brown">Question or Comments?</h6>
+                <a href="{% url 'contact' %}"><i class="fas fa-comments brown"></i>contact us</a>
+            </div>
+            <div class="col-12 col-sm-4 text-center">
+                <h6>Subscribe</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <span>Privacy Policy</span>
+                <span> | </span>
+                <span>© 2022 CoffeeShop - Ellie Thurlwell</span>
             </div>
         </div>
     </footer>
