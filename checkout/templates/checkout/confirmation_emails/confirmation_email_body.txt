@@ -1,0 +1,19 @@
+Hi {{ order.full_name }}!
+
+Your order at CoffeeShop is confirmed! Your order info is provided below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Subtotal: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Total: £{{ order.grand_total }}
+
+Your order will be delivered to {{ order.street_address1 }}, {{ order.town_or_city }}, {{ order.country }}.
+
+If you have any questions or want to get in touch, email us at {{ contact_email }}
+
+Thanks for shopping at CoffeeShop, enjoy your purchase!
+
+Sincerely,
+CoffeeShop
