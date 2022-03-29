@@ -7,5 +7,14 @@
 {% endblock %}
 
 {% block content %}
-    
+    <div class="col-12 col-lg-6 offset-lg-3">
+        <p class="text-muted">Please fill out the form to get in touch with us</p>
+        <form method="POST">
+            {% csrf_token %}
+            {{ contact_form | crispy }}
+            <div class="submit-btn text-right mt-5 mb-2">
+                <button class="btn" id="submit-btn">Complete order</button>
+            </div>
+        </form>
+    </div>
 {% endblock %}
