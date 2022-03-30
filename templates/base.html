@@ -44,7 +44,7 @@
     <header>
         <div class="row">
 
-            <div class="col-12 col-lg-9 my-auto text-center text-lg-left">
+            <div class="col-12 col-lg-9 d-none d-sm-block my-auto text-center text-lg-left">
                 <span>
                     <a href="{% url 'home' %}" class="nav-link">
                         <h1 class="logo brown">CoffeeShop</h1>
@@ -87,9 +87,6 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item brown">Admin Controls</a>
-                                {% endif %}
                                 <a href=" {% url 'profile' %}" class="dropdown-item brown">Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item brown">Logout</a>
                             {% else %}
@@ -128,6 +125,9 @@
                 <!-- site wide navbar -->
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav w-auto mx-auto">
+                        <li class="nav-item d-xs-block d-sm-none">
+                            <a href="{% url 'home' %}" class="nav-link brown">Home</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link brown" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Coffee
