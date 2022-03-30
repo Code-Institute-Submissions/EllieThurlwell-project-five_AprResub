@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Disallow: /checkout/
+Disallow: /checkout/checkout_success/
+Sitemap: https://coffeeshop-pp5.herokuapp.com/sitemap.xml
