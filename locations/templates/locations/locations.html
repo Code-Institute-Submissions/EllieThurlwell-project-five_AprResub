@@ -15,10 +15,18 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-8 offset-2">
+                <p class="lead">
+                    Would you like to drink our wonderful coffee somewhere other than home? Well you're in luck. 
+                    For a limited time these wonderful cafes are brewing and serving one or more of our coffees! 
+                </p>
+            </div>
+        </div>
+        <div class="row">
             <div class="product-container col-12">
                 <div class="row">
                     {% for location in locations %}
-                        <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card h-100 border-0 rounded-0">
                                 {% if location.image %}
                                     <img class="card-img-top img-fluid" src="{{ location.image.url }}" alt="{{ location.location }}">
@@ -37,7 +45,7 @@
                                             {% if location.end_date %}
                                                 <small class="text-muted">{{ location.end_date }}</small>
                                             {% endif %}
-                                            <p class="lead mb-0 text-left">£{{ location.description }}</p>
+                                            <p class="lead mb-0 text-left">{{ location.description }}</p>
                                         </div>
                                     </div>
                                 </div>
