@@ -2,6 +2,10 @@
 {% load static %}
 {% load basket_tools %}
 
+{% block title %}
+    - Checkout
+{% endblock %}
+
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
@@ -34,10 +38,6 @@
                                 {% if item.product.image %}
                                     <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
-                                <!-- <p>
-                                    <i class="fas fa-exclamation brown"></i>
-                                    <small>no product image available</small>
-                                 </p> -->
                                  <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholdersm.jpg" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>

@@ -73,6 +73,14 @@ h3 {
     border-radius: 5px;
 }
 
+footer {
+    padding-top: 3rem;
+}
+
+#footer-title-sub {
+    text-align: center;
+}
+
 /* index styling */
 #index-full {
     height: 100vh;
@@ -108,20 +116,6 @@ h3 {
     padding: 0;
 }
 
-footer {
-    padding-top: 3rem;
-}
-
-#footer-title-sub {
-    text-align: center;
-}
-
-/* body > footer {
-    width: 100%;
-    position: sticky;
-    top: 100vh;
-} */
-
 /* products page styling */
 .btt-btn {
     height: 35px;
@@ -137,6 +131,7 @@ footer {
     cursor: pointer;
 }
 
+/* media queries */
 @media (min-width:1024px) {
     nav li > a {
         margin: auto 5px;
@@ -156,8 +151,4 @@ footer {
     .index-grab, #index-title, #index-sub {
         font-size: 3rem;
     }
-}
-
-@media screen and (max-width: 425px) {
-    
 }

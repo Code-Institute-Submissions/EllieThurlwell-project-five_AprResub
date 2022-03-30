@@ -2,6 +2,10 @@
 {% load static %}
 
 
+{% block title %}
+    - Products
+{% endblock %}
+
 {% block pageheader %}
 
 {% endblock %}
@@ -22,7 +26,6 @@
         <div class="row">
             <div class="product-container col-12">
                 <div class="row mb-2">
-                    <!-- number of products in result -->
                     <div class="col">
                         <p class="text-muted">{{ products|length }} products{% if search_term %} found for <em>{{ search_term }}</em>{% endif %}</p>
                     </div>
@@ -45,9 +48,6 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left">£{{ product.price }}</p>
-                                            <!-- <p class="small mt-1">
-                                                <a href="{% url 'products' %}?category={{ product.category.friendly_name }}">{{ product.category.friendly_name }}</a>
-                                            </p> -->
                                             {% if product.rating %}
                                                 <small class="text-muted">{{ product.rating }}/5</small>
                                             {% else %}
