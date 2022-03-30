@@ -36,6 +36,20 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
+def subscription(request):
+    """ view to display subscription products """
+    subscriptions = Product.objects.filter(category__name='subscription')
+
+    template = 'products/subscription.html'
+
+    context = {
+        'subscriptions': subscriptions,
+    }
+    print(subscriptions)
+
+    return render(request, template, context)
+
+
 def product_detail(request, product_id):
     """ view to display the detail page of a given product """
     product = get_object_or_404(Product, pk=product_id)
