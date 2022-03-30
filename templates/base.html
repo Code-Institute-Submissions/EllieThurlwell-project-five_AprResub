@@ -47,7 +47,7 @@
             <div class="col-12 col-lg-9 d-none d-sm-block my-auto text-center text-lg-left">
                 <span>
                     <a href="{% url 'home' %}" class="nav-link">
-                        <h1 class="logo brown">CoffeeShop</h1>
+                        <h1 class="logo brown" id="site-title">CoffeeShop</h1>
                     </a>
                 </span>
             </div>
@@ -199,18 +199,15 @@
 
     <!-- site wide footer -->
     <footer class="container-fluid">
+        <hr>
         <div class="row">
-            <div class="col-12 col-sm-4 text-center">
-                <h6 class="brown">Follow Us!</h6>
-                <a class="btn brown" href="http://facebook.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Facebook (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn brown" href="http://twitter.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-                <a class="btn brown" href="http://instagram.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Instagram (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            <div class="col-12 col-sm-4 text-center mt-3">
+                <h4 class="brown">Follow Us!</h4>
+                <a class="btn brown" href="http://facebook.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Facebook (opens in a new tab)"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a class="btn brown" href="http://twitter.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Twitter (opens in a new tab)"><i class="fab fa-twitter fa-lg"></i></a>
+                <a class="btn brown" href="http://instagram.com" target="_blank" rel="noopener nofollow" aria-label="Find us on Instagram (opens in a new tab)"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
-            <div class="col-12 col-sm-4 text-center">
-                <h6 class="brown">Question or Comments?</h6>
-                <a href="{% url 'contact' %}"><i class="fas fa-comments brown"></i>contact us</a>
-            </div>
-            <div class="col-12 col-sm-4 text-center">
+            <div class="col-12 col-sm-4 text-center mt-3">
                 
                 <!-- Begin Mailchimp Signup Form -->
                 
@@ -219,7 +216,7 @@
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
                         novalidate>
                         <div id="mc_embed_signup_scroll">
-                            <h6>Subscribe</h6>
+                            <h4 id="footer-title-sub">Subscribe</h4>
                             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
@@ -248,10 +245,15 @@
                 
                 <!--End mc_embed_signup-->
             </div>
+            <div class="col-12 col-sm-4 text-center mt-3">
+                <h4 class="brown">Question or Comments?</h4>
+                <a class="brown" href="{% url 'contact' %}"><i class="fas fa-comments fa-lg brown"></i>contact us</a>
+            </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-12 text-center">
-                <span><a href="https://www.privacypolicygenerator.info/live.php?token=fWBTa6zhDMORkYmuRNelaaZv2HJRqdSO" target="_blank">Privacy Policy</a></span>
+                <span><a class="brown" href="https://www.privacypolicygenerator.info/live.php?token=fWBTa6zhDMORkYmuRNelaaZv2HJRqdSO" target="_blank">Privacy Policy</a></span>
                 <span> | </span>
                 <span>© 2022 CoffeeShop - Ellie Thurlwell</span>
             </div>

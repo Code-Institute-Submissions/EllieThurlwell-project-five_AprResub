@@ -69,7 +69,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
+                                <td colspan="5" class="pt-5 text-right brown">
                                     <h6>Subtotal: £{{ total|floatformat:2 }}</h6>
                                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h5 class="mt-4"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h5>
@@ -80,12 +80,12 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a class="btn btn-lg" href="{% url 'products' %}">
+                                    <a class="btn btn-border btn-lg" href="{% url 'products' %}">
                                         <span><i class="fas fa-arrow-circle-left brown"></i></span>
-                                        <span>Keep shopping</span>
+                                        <span class="brown">Keep shopping</span>
                                     </a>
-                                    <a class="btn btn-lg" href="{% url 'checkout' %}">
-                                        <span>Checkout</span>
+                                    <a class="btn btn-border btn-lg" href="{% url 'checkout' %}">
+                                        <span class="brown">Checkout</span>
                                         <span><i class="fas fa-lock brown"></i></span>
                                     </a>
                                 </td>
@@ -94,7 +94,7 @@
                     </div>
                 {% else %}
                     <p>Your basket is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-lg"><i class="fas fa-arrow-circle-left brown"></i>Check out our products!</a>
+                    <a href="{% url 'products' %}" class="btn btn-border"><i class="fas fa-arrow-circle-left brown"></i>Check out our products!</a>
                 {% endif %}
             </div>
         </div>

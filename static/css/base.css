@@ -16,6 +16,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Varela Round', sans-serif !important;
 }
 
+h3 {
+    color: #FF6400;
+}
+
+#site-title:hover {
+    color: #FF6400 !important;
+}
+
 .orange {
     color: #FF6400;
 }
@@ -53,6 +61,18 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
 }
 
+.btn-border {
+    margin: auto 5px;
+    border: solid 1px #FF6400;
+    border-radius: 5px;
+}
+
+.btn-border:hover {
+    margin: auto 5px;
+    border: solid 1px #2B78E4;
+    border-radius: 5px;
+}
+
 /* index styling */
 #index-full {
     height: 100vh;
@@ -74,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #index-sub {
     font-size: 3rem;
+    color: #4A1E00;
 }
 
 .index-grab {
@@ -87,12 +108,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-body > footer {
-    width: 100%;
-    /* background-color: white; */
-    /* position: sticky;
-    top: 100vh; */
+footer {
+    padding-top: 3rem;
 }
+
+#footer-title-sub {
+    text-align: center;
+}
+
+/* body > footer {
+    width: 100%;
+    position: sticky;
+    top: 100vh;
+} */
 
 /* products page styling */
 .btt-btn {
@@ -116,10 +144,20 @@ body > footer {
         border-radius: 5px;
         color: #4A1E00 !important;
     }
+    nav li > a:hover {
+        margin: auto 5px;
+        border: solid 1px #2B78E4;
+        border-radius: 5px;
+        color: #4A1E00 !important;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .index-grab, #index-title, #index-sub {
         font-size: 3rem;
     }
+}
+
+@media screen and (max-width: 425px) {
+    
 }

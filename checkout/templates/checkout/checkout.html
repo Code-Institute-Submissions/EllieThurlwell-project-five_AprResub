@@ -105,16 +105,16 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
                     <div class="submit-btn text-right mt-5 mb-2">
-                        <a class="btn" href="{% url 'view_basket' %}">
+                        <a class="btn btn-border btn-lg" href="{% url 'view_basket' %}">
                             <span><i class="fas fa-arrow-circle-left brown"></i></span>
                             <span>Adjust basket</span>
                         </a>
-                        <button class="btn" id="submit-btn">
+                        <button class="btn btn-border btn-lg" id="submit-btn">
                             <span>Complete order</span>
                             <span><i class="fas fa-lock brown"></i></span>
                         </button>
-                        <p class="small">
-                            <span><i class="fas fa-exclamation brown"></i></span>
+                        <p class="small blue">
+                            <span><i class="fas fa-exclamation"></i></span>
                             <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
                         </p>
                     </div>
