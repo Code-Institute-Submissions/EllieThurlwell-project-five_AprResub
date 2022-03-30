@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 /* index styling */
 #index-full {
     height: 100vh;
-    background: url(/media/index.jpg) top / cover no-repeat scroll;
+    background: url(/media/index-sm.jpg) top / cover no-repeat scroll;
     color: #4A1E00;
 }
 
