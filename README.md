@@ -53,7 +53,7 @@ You can find the project board <a href="https://github.com/EllieThurlwell/projec
     -   Wireframes for the homepage and other planned pages of the site, with consistent elements such as header and footer featured on all.
     <h2 align="center"><img src="media/wireframes.png"></h2>
     -   Lucidchart was used to create the initial idea of the databases and their interactions with eachother.
-    <h2 align="center"><img src="media/db-wireframes.png"></h2>
+    <h2 align="center"><img src="media/db-wireframe.png"></h2>
 
 ## Features
 
@@ -88,6 +88,11 @@ You can find the project board <a href="https://github.com/EllieThurlwell/projec
 
 - the site owner would be able to create, read, update and delete products etc from within the main site navigation rather than relying on the django admin panel.
 
+
+## Facebook business page
+
+- This mock up Facebook business page shows hwo the CoffeeShop business would interact with its audience, to keep them engaged and interested in the products
+<h2 align="center"><img src="media/facebook-business.jpg"></h2>
 
 ### Languages Used
 
