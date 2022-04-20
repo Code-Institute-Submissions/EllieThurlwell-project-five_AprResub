@@ -46,12 +46,18 @@
                                 </a>
                                 <div class="card-footer">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-6">
                                             <p class="lead mb-0 text-left">£{{ product.price }}</p>
                                             {% if product.rating %}
                                                 <small class="text-muted">{{ product.rating }}/5</small>
                                             {% else %}
                                                 <small class="text-muted">no rating</small>
+                                            {% endif %}
+                                        </div>
+                                        <div class="col-6">
+                                            {% if request.user.is_superuser %}
+                                                <a class="d-block text-right" href="{% url 'edit_product' product.id %}">Edit</a>
+                                                <a class="d-block text-right" href="{% url 'delete_product' product.id %}">Delete</a>
                                             {% endif %}
                                         </div>
                                     </div>
