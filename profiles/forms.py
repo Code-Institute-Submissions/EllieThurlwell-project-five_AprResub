@@ -13,7 +13,7 @@ class UserProfileForm(forms.ModelForm):
         exclude = ('user',)
 
     def __init__(self, *args, **kwargs):
-        """ add placeholders to form fields and autofocus fullname """
+        """ add placeholders to form fields and set autofocus field """
 
         super().__init__(*args, **kwargs)
         placeholders = {
