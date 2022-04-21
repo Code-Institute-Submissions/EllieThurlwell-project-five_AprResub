@@ -131,6 +131,24 @@ footer {
     cursor: pointer;
 }
 
+/* admin control page styling */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn-file > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
 /* media queries */
 @media (min-width:1024px) {
     nav li > a {
