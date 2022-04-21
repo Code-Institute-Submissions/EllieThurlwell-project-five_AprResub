@@ -149,6 +149,20 @@ footer {
     z-index: 1;
 }
 
+/* error pages styling */
+.errorpage-padding {
+    padding-top: 10vh;
+}
+
+.errorpage-title {
+    font-size: 5rem;
+}
+
+.errorpage-sub {
+    font-size: 3rem;
+    color: #4A1E00;
+}
+
 /* media queries */
 @media (min-width:1024px) {
     nav li > a {
