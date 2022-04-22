@@ -1,10 +1,6 @@
 /* site wide styling */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Varela+Round&display=swap');
 
-html, body {
-    height: 100%;
-}
-
 body {
     background-color: #f8eded;
     font-family: 'Quicksand', sans-serif;
@@ -102,7 +98,7 @@ footer {
 
 #index-sub {
     font-size: 3rem;
-    color: #4A1E00;
+    color: #4A1E00 !important;
 }
 
 .index-grab {
@@ -173,15 +169,11 @@ footer {
 @media (min-width:1024px) {
     nav li > a {
         margin: auto 5px;
-        border: solid 1px #FF6400;
-        border-radius: 5px;
         color: #4A1E00 !important;
     }
     nav li > a:hover {
         margin: auto 5px;
-        border: solid 1px #2B78E4;
-        border-radius: 5px;
-        color: #4A1E00 !important;
+        color: #FF6400 !important;
     }
 }
 

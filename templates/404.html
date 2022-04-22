@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="errorpage-full">
-        <div class="container" class="errorpage-padding">
+        <div class="container errorpage-padding">
             <div class="row">
                 <div class="col-12 my-auto text-center">
                     <h1 class="errorpage-title">404</h1>
@@ -21,8 +21,8 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <p>The page you are trying to access doesn't exist</p>
-                    <span><a href="{% url 'home' %}">Home</a></span>
-                    <span><a href="{% url 'products' %}?category=beans,ground,capsules,decaf">Coffee</a></span>
+                    <span class="p-2"><a href="{% url 'home' %}">Home</a></span>
+                    <span class="p-2"><a href="{% url 'products' %}?category=beans,ground,capsules,decaf">Coffee</a></span>
                     <p>Try navigating to a different part of the site to refill your cup</p>
                 </div>
             </div>
