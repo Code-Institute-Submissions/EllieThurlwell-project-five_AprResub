@@ -150,6 +150,12 @@ footer {
 }
 
 /* error pages styling */
+.errorpage-full {
+    height: 100vh;
+    background: url(/media/error.jpg) top / cover no-repeat scroll;
+    color: #4A1E00;
+}
+
 .errorpage-padding {
     padding-top: 10vh;
 }
