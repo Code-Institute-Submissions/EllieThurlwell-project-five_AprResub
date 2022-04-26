@@ -47,7 +47,6 @@ def subscription(request):
     context = {
         'subscriptions': subscriptions,
     }
-    print(subscriptions)
 
     return render(request, template, context)
 
