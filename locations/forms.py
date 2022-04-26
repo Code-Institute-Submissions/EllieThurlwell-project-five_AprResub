@@ -10,6 +10,10 @@ class LocationForm(forms.ModelForm):
         """ define form fields """
         model = Location
         fields = '__all__'
+        widgets = {
+            'start_date': forms.TextInput(attrs={'type': 'date'}),
+            'end_date': forms.TextInput(attrs={'type': 'date'})
+        }
 
     image = forms.ImageField(
         label='Image',
