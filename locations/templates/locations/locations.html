@@ -52,6 +52,14 @@
                                             <p class="lead mb-0 text-left">{{ location.description }}</p>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            {% if request.user.is_superuser %}
+                                                <a class="d-block text-right" href="{% url 'edit_location' location.id %}">Edit</a>
+                                                <a class="d-block text-right" href="">Delete</a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

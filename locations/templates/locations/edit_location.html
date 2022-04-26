@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    - Edit Product
+    - Edit Location
 {% endblock %}
 
 {% block pageheader %}
@@ -13,13 +13,13 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h3>Edit Product</h3>
+                <h3>Edit Location</h3>
                 <hr class="mb-1">
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
-                <form method='POST' action="{% url 'edit_product' product.id %}" enctype="multipart/form-data">
+                <form method='POST' action="{% url 'edit_location' location.id %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -29,7 +29,7 @@
                         {% endif %}
                     {% endfor %}
                     <div class="submit-btn text-right mt-5 mb-2">
-                        <a class="btn btn-border" href="{% url 'products' %}">
+                        <a class="btn btn-border" href="{% url 'locations' %}">
                             Cancel
                         </a>
                         <button class="btn btn-border" type="submit">

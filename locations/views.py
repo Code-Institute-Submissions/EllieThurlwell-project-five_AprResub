@@ -30,7 +30,7 @@ def add_location(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added location')
-            return redirect(reverse('all_locations'))
+            return redirect(reverse('locations'))
         else:
             messages.error(request, 'Could not add location. Please try again')
     else:
@@ -39,6 +39,35 @@ def add_location(request):
     template = 'locations/add_location.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_location(request, location_id):
+    """ view to handle the edit location form from admin user """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only admin users can access this page')
+        return redirect(reverse('home'))
+
+    location = get_object_or_404(Location, pk=location_id)
+    if request.method == 'POST':
+        form = LocationForm(request.POST, request.FILES, instance=location)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated location!')
+            return redirect(reverse('locations'))
+        else:
+            messages.error(request, 'Update failed. Please try again')
+    else:
+        form = LocationForm(instance=location)
+        messages.info(request, f'You are editing {location.location}')
+
+    template = 'locations/edit_location.html'
+    context = {
+        'form': form,
+        'location': location,
     }
 
     return render(request, template, context)
