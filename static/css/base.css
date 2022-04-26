@@ -93,27 +93,6 @@ footer {
     text-decoration: none;
 }
 
-/* override mailchimp button styling */
-#mc-embedded-subscribe {
-    background: none !important;
-    color: #4A1E00 !important;
-    border: solid 1px #FF6400 !important;
-    border-radius: 5px !important;
-}
-
-#mc-embedded-subscribe:hover {
-    border: solid 1px #2B78E4 !important;
-    border-radius: 5px !important;
-}
-
-#mailchimp-img {
-    width: 8rem;
-}
-
-#mce-EMAIL {
-    height: 2rem;
-}
-
 /* index styling */
 #index-full {
     height: 100vh;
@@ -148,6 +127,26 @@ footer {
 #mc_embed_signup form {
     padding: 0;
 }
+/* override mailchimp button styling */
+#mc-embedded-subscribe {
+    background: none !important;
+    color: #4A1E00 !important;
+    border: solid 1px #FF6400 !important;
+    border-radius: 5px !important;
+}
+
+#mc-embedded-subscribe:hover {
+    border: solid 1px #2B78E4 !important;
+    border-radius: 5px !important;
+}
+
+#mailchimp-img {
+    width: 8rem;
+}
+
+#mce-EMAIL {
+    height: 2rem;
+}
 
 /* products page styling */
 .btt-btn {
@@ -180,6 +179,10 @@ footer {
     opacity: 0;
     cursor: pointer;
     z-index: 1;
+}
+
+.custom-control-label::before {
+    display: none;
 }
 
 /* error pages styling */
