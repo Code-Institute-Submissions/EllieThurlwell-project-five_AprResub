@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 offset-md-3">
                 <form method='POST' action="{% url 'add_location' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}

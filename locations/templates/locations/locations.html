@@ -38,7 +38,7 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholdersm.jpg" alt="{{ location.location }}">
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p>{{ location.location}}</p>
+                                    <p class="lead">{{ location.location}}</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
@@ -49,14 +49,18 @@
                                             {% if location.end_date %}
                                                 <small class="text-muted">{{ location.end_date }}</small>
                                             {% endif %}
-                                            <p class="lead mb-0 text-left">{{ location.description }}</p>
+                                            <p class="mb-0 text-left">{{ location.description }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
                                             {% if request.user.is_superuser %}
-                                                <a class="d-block text-right" href="{% url 'edit_location' location.id %}">Edit</a>
-                                                <a class="d-block text-right" href="{% url 'delete_location' location.id %}">Delete</a>
+                                                <span>
+                                                    <a class="d-block text-right" href="{% url 'edit_location' location.id %}">Edit</a>
+                                                </span>
+                                                <span>
+                                                    <a class="d-block text-right" href="{% url 'delete_location' location.id %}">Delete</a>
+                                                </span>
                                             {% endif %}
                                         </div>
                                     </div>
