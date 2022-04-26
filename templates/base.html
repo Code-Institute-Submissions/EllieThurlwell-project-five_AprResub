@@ -91,10 +91,10 @@
                                     <a href=" {% url 'admin_controls' %}" class="dropdown-item brown">Admin controls</a>
                                 {% endif %}
                                 <a href=" {% url 'profile' %}" class="dropdown-item brown">Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item brown">Logout</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item brown">Log Out</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item brown">Sign Up</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item brown">Login</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item brown">Log In</a>
                             {% endif %}
                         </div>
                     </li>
