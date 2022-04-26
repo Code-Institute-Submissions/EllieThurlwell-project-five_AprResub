@@ -71,3 +71,16 @@ def edit_location(request, location_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_location(request, location_id):
+    """ view for admin to delete a location """
+    if not request.user.is_superuser:
+        messages.error(request, 'Only admin users can access this page')
+        return redirect(reverse('home'))
+
+    location = get_object_or_404(Location, pk=location_id)
+    location.delete()
+    messages.success(request, 'Location deleted')
+    return redirect(reverse('locations'))
