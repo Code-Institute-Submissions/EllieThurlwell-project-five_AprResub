@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    - Admin Controls
+{% endblock %}
+
+{% block pageheader %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h3>Admin Controls</h3>
+                <hr class="mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <span>
+                    <a href="{% url 'add_product' %}">Add Product</a>
+                </span>
+            </div>
+            <div class="col-12 col-md-6">
+                <span>
+                    <a href="">Add Location</a>
+                </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

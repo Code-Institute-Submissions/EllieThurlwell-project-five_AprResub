@@ -1,10 +1,11 @@
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Product, Category
+from locations.models import Location
 
 
 class ProductForm(forms.ModelForm):
-    """ form of product info for admin access """
+    """ form to add product info for admin access """
 
     class Meta:
         """ define form fields """
@@ -26,3 +27,18 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = friendly_names
         # set attributes to all field elements
+
+
+# class LocationForm(forms.ModelForm):
+#     """ form to add location info for admin access """
+
+#     class Meta:
+#         """ define form fields """
+#         model = Location
+#         fields = '__all__'
+
+#     # image = forms.ImageField(
+#     #     label='Image',
+#     #     required=False,
+#     #     widget=CustomClearableFileInput
+#     # )
