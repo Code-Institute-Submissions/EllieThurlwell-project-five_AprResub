@@ -17,6 +17,15 @@ h3 {
     text-align: center;
 }
 
+a {
+    text-decoration: none !important;
+    color: #2B78E4;
+}
+
+a:hover {
+    color: #FF6400;
+}
+
 #site-title:hover {
     color: #FF6400 !important;
 }
@@ -35,6 +44,7 @@ h3 {
 
 #free-del {
     background-color: #2B78E4;
+    color: #f8eded;
 }
 
 .message-container {
