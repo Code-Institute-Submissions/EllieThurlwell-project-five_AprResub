@@ -3,4 +3,9 @@ Disallow: /accounts/
 Disallow: /basket/
 Disallow: /checkout/
 Disallow: /checkout/checkout_success/
+Disallow: /admin_controls/
+Disallow: /products/add/
+Disallow: /products/edit/
+Disallow: /location/add/
+Disallow: /location/edit/
 Sitemap: https://coffeeshop-pp5.herokuapp.com/sitemap.xml
