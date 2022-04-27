@@ -26,6 +26,10 @@ a:hover {
     color: #FF6400;
 }
 
+#title-div {
+    display: inline;
+}
+
 #site-title:hover {
     color: #FF6400 !important;
 }

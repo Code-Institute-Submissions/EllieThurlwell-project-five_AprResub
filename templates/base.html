@@ -45,11 +45,11 @@
         <div class="row header-row">
 
             <div class="col-12 col-lg-9 d-none d-sm-block my-auto text-center text-lg-left">
-                <span>
-                    <a href="{% url 'home' %}" class="nav-link">
-                        <h1 class="logo brown" id="site-title">CoffeeShop</h1>
-                    </a>
-                </span>
+                <div id="title-div">
+                    <h1 class="logo" id="site-title">
+                        <a href="{% url 'home' %}" class="nav-link brown">CoffeeShop</a>
+                    </h1>
+                </div>
             </div>
 
             <div class="col-12 col-lg-3 px-0">
@@ -146,10 +146,10 @@
                             <a href="{% url 'subscription' %}" class="nav-link brown">Subscription</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link brown" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link brown" href="#" id="equipment-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Equipment
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="coffee-link">
+                            <div class="dropdown-menu" aria-labelledby="equipment-link">
                                 <a href="{% url 'products' %}?category=drip_coffee,coffee_makers,filters,mugs" class="dropdown-item brown">All</a>
                                 <a href="{% url 'products' %}?category=coffee_makers" class="dropdown-item brown">Coffee makers</a>
                                 <a href="{% url 'products' %}?category=filters" class="dropdown-item brown">Filter papers</a>
@@ -239,7 +239,7 @@
                                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-border">
                                     <p class="brandingLogo"><a href="http://eepurl.com/hYn_mr"
                                             title="Mailchimp - email marketing made easy and fun"><img id="mailchimp-img"
-                                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+                                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="Mailchimp logo"></a>
                                     </p>
                                 </div>
                             </div>
