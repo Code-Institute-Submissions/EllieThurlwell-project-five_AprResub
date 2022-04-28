@@ -213,6 +213,10 @@ footer {
     color: #4A1E00;
 }
 
+.error-div {
+    background-color: #f8eded;
+}
+
 /* media queries */
 @media (min-width:1024px) {
     nav li > a {
